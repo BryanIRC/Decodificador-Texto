@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/alura-ico.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
 </head>
+
 <body>
     <div id="container">
         <header>
-            <img id="logo" src="src/alura-ico.png" alt="Alura logo">
+            <img id="logo" src="src/alura-img.png" alt="Alura logo">
         </header>
         <main>
             <section id="txt-izq">
-            <textarea name="txt-noencrypt" id="txt-noencrypt" cols="30" rows="10" placeholder="Ingrese el texto que desea encriptar"></textarea>
+                <textarea name="txt-noencrypt" class="txt-noencrypt" cols="30" rows="10"
+                    placeholder="Ingrese el texto que desea encriptar"></textarea>
                 <div class="input-btn">
-                    <input class="btn" type="button" value="Encriptar">
-                    <input class="btn" type="button" value="Desencriptar">
+                    <input class="btn" type="button" value="Encriptar" onclick="BtnEncrypt()">
+                    <input class="btn" type="button" value="Desencriptar" onclick="BtnUnscrypt()">
                 </div>
             </section>
 
             <section id="txt-der">
-                <textarea name="txt-encrypt" id="txt-encrypt" readonly="disable"></textarea>
+                <textarea name="txt-encrypt" class="txt-encrypt" readonly="disable"></textarea>
                 <div class="input-btn">
                     <input class="btn" type="button" value="Copiar">
                 </div>
@@ -32,5 +36,7 @@
             Desarrollado por: BRYAN RÍOS - https://github.com/BryanIRC/one-challenges
         </footer>
     </div>
+    <script src="scrip.js"></script>
 </body>
+
 </html>
