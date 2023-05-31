@@ -40,7 +40,7 @@ textarea{
 }
 footer {
     height: auto;
-    font-size: small;
+    font-size: 12px;
     color: hsl(180, 100%, 1%);
     text-align: center;
 }
