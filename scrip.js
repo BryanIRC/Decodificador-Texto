@@ -47,7 +47,7 @@ function ValidateTxt(txtvalidated) {
         }
     }
     for (let i = 123; i <=255; i++){
-        if(i<164 && i>165){
+        if(i<164 || i>165){
             if (txtvalidated.includes(String.fromCharCode(i))) {
                 return true;}
             }}
